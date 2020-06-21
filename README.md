@@ -3,11 +3,12 @@
 This is an introductory workshop to Git, created by 3DC. This Readme contains the lesson content for this workshop, including sample snippets.
 
 ##### Table of Contents
-[What is Git and why should I learn Git?](#whatisgit)
-[What is GitHub and how is it different from Git?](#gitvsgithub)
+[What is Git and why should I learn Git?](#whatisgit)   
+[What is GitHub and how is it different from Git?](#gitvsgithub)    
+
+<a name="whatisgit"></a>
 
 ## What is Git and why should I learn Git?  
-<a name="whatisgit"></a>
 
 <div style="text-align:center"><img src="imgs/git.png" /></div>
 
@@ -15,8 +16,9 @@ Git is a version control tool. It helps you to manage the project history of mod
 
 Modern projects are usually iteratively improved, and Git helps us to manage these small iterations efficiently and cleanly.
 
+<a name="gitvsgithub"></a>
+
 ## What is GitHub and how is it different from Git?
-<a name="gitvsgithub">
 
 <div style="text-align:center"><img src="imgs/github.png" /></div>
 
