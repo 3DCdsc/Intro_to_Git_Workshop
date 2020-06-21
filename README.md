@@ -5,7 +5,7 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 ##### Table of Contents
 [What is Git and why should I learn Git?](#whatisgit?)
 
-<a name="whatisgit"/>
+<a name="whatisgit"></a>
 ## What is Git and why should I learn Git?  
 
 <div style="text-align:center"><img src="imgs/git.png" /></div>
