@@ -2,11 +2,14 @@
 
 This is an introductory workshop to Git, created by 3DC. This Readme contains the lesson content for this workshop, including sample snippets.
 
-##### Table of Contents
-[What is Git and why should I learn Git?](#whatisgit)   
-[What is GitHub and how is it different from Git?](#gitvsgithub)    
-
-<a name="whatisgit"></a>
+1. [What is Git and why should I learn Git?](#what-is-git-and-why-should-i-learn-git)
+2. [What is GitHub and how is it different from Git?](#what-is-github-and-how-is-it-different-from-git)
+3. [Environment Setup (Git)](#environment-setup-git)
+   1. [Windows](#windows)
+   2. [Mac OS X](#mac-os-x)
+   3. [Linux (Ubuntu/Debian)](#linux-ubuntudebian)
+   4. [Linux (Fedora)](#linux-fedora)
+  
 
 ## What is Git and why should I learn Git?  
 
@@ -15,8 +18,6 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 Git is a version control tool. It helps you to manage the project history of modern projects (usually software). It is almost always an essential tool when collaborating with others on software projects.
 
 Modern projects are usually iteratively improved, and Git helps us to manage these small iterations efficiently and cleanly.
-
-<a name="gitvsgithub"></a>
 
 ## What is GitHub and how is it different from Git?
 
