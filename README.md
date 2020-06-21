@@ -2,4 +2,7 @@
 
 ## Git Commands:
 
-### git add
+We will now be going over some basic git commands
+
+### git add:
+
