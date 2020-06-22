@@ -99,6 +99,10 @@ these are just some of the most commonly used commands, to see the full list of 
 
 ## Removing a File
 
+As your project changes over time, there will be times when you would have to remove a file or an entire directory from a repository. Git has a special command to remove files, which also takes some important flags depending on your use-case!
+
+Let us now take a look at the ```git rm``` command and how it can be used to remove files and directories from your repository!
+
 
 
 
