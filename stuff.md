@@ -127,19 +127,19 @@ However we are not quite done yet! If you run the ```status``` command you will 
 Step 1: Go to [this page](https://github.com/join) in any web browser
 
 Step 2: Enter all your personal details: your desired username, email Id and Password
-<div style="text-align:center"><img src="images/personal.png" /></div>
+<div style="text-align:center"><img src="images/personal.PNG" /></div>
 
 Step 3: Click the "Create a free account" button and complete any CAPTCHA puzzle you are asked to complete
-<div style="text-align:center"><img src="images/captcha.png" /></div>
+<div style="text-align:center"><img src="images/captcha.PNG" /></div>
 
 Step 4: Select all your preferences 
-<div style="text-align:center"><img src="images/preferences.png" /></div>
-<div style="text-align:center"><img src="images/preferences2.png" /></div>
-<div style="text-align:center"><img src="images/preferences3.png" /></div>
-<div style="text-align:center"><img src="images/preferences4.png" /></div>
+<div style="text-align:center"><img src="images/preferences.PNG" /></div>
+<div style="text-align:center"><img src="images/preferences2.PNG" /></div>
+<div style="text-align:center"><img src="images/preferences3.PNG" /></div>
+<div style="text-align:center"><img src="images/preferences4.PNG" /></div>
 
 Step 5: Verify your email address 
-<div style="text-align:center"><img src="images/verify email.png" /></div>
+<div style="text-align:center"><img src="images/verify email.PNG" /></div>
 
 Step 6: Skip this step for now
 
