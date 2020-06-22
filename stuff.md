@@ -127,22 +127,21 @@ However we are not quite done yet! If you run the ```status``` command you will 
 Step 1: Go to [this page](https://github.com/join) in any web browser
 
 Step 2: Enter all your personal details: your desired username, email Id and Password
-<div style="text-align:center"><img src="images/git-add.png" /></div>
+<div style="text-align:center"><img src="images/personal.png" /></div>
 
-Step 3: Click the "Create an account" button and complete any CAPTCHA puzzle you are asked to complete
-<div style="text-align:center"><img src="images/git-add.png" /></div>
+Step 3: Click the "Create a free account" button and complete any CAPTCHA puzzle you are asked to complete
+<div style="text-align:center"><img src="images/captcha.png" /></div>
 
-Step 4: Choose your desired plan, choose the free plan for now 
-<div style="text-align:center"><img src="images/git-add.png" /></div>
+Step 4: Select all your preferences 
+<div style="text-align:center"><img src="images/preferences.png" /></div>
+<div style="text-align:center"><img src="images/preferences2.png" /></div>
+<div style="text-align:center"><img src="images/preferences3.png" /></div>
+<div style="text-align:center"><img src="images/preferences4.png" /></div>
 
 Step 5: Verify your email address 
+<div style="text-align:center"><img src="images/verify email.png" /></div>
 
-Step 6: Review your plan and hit continue
-<div style="text-align:center"><img src="images/git-add.png" /></div>
-
-Step 7: Select your preference and hit submit
-<div style="text-align:center"><img src="images/git-add.png" /></div>
-
+Step 6: Skip this step for now
 
 
 
