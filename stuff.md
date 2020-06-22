@@ -126,10 +126,10 @@ However we are not quite done yet! If you run the ```status``` command you will 
 
 Step 1: Go to [this page](https://github.com/join) in any web browser
 
-Step 2: Enter all your personal details: your desired username, email Id and Password
+Step 2: Enter all your personal details: your desired username, email Id and Password and hit "Sign up for GitHub"
 <div style="text-align:center"><img src="images/personal.PNG" /></div>
 
-Step 3: Click the "Create a free account" button and complete any CAPTCHA puzzle you are asked to complete
+Step 3: Click the Complete any CAPTCHA puzzle you are asked to complete and hit "Join a Free Plan"
 <div style="text-align:center"><img src="images/captcha.PNG" /></div>
 
 Step 4: Select all your preferences 
@@ -141,7 +141,8 @@ Step 4: Select all your preferences
 Step 5: Verify your email address 
 <div style="text-align:center"><img src="images/verify email.PNG" /></div>
 
-Step 6: Skip this step for now
+Step 6: Skip any other step for now
+
 
 
 
