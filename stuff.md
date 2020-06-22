@@ -103,6 +103,23 @@ As your project changes over time, there will be times when you would have to re
 
 Let us now take a look at the ```git rm``` command and how it can be used to remove files and directories from your repository!
 
+```bash
+git rm <filename>
+```
+this command can be used to remove a single file from the repository
+
+```bash
+git rm <filename1> <filename2>
+```
+this command can be used to remove multiple files
+
+```bash
+git rm -r <directory>
+```
+this command can be used to remove an entire directory from the repository 
+
+
+
 
 
 
