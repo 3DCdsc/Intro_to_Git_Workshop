@@ -122,6 +122,31 @@ However we are not quite done yet! If you run the ```status``` command you will 
 
 ![](insert screenshots with explanation below)
 
+## Creating a GitHub account
+
+Step 1: Go to [this page](https://github.com/join) in any web browser
+
+Step 2: Enter all your personal details: your desired username, email Id and Password
+<div style="text-align:center"><img src="images/git-add.png" /></div>
+
+Step 3: Click the "Create an account" button and complete any CAPTCHA puzzle you are asked to complete
+<div style="text-align:center"><img src="images/git-add.png" /></div>
+
+Step 4: Choose your desired plan, choose the free plan for now 
+<div style="text-align:center"><img src="images/git-add.png" /></div>
+
+Step 5: Verify your email address 
+
+Step 6: Review your plan and hit continue
+<div style="text-align:center"><img src="images/git-add.png" /></div>
+
+Step 7: Select your preference and hit submit
+<div style="text-align:center"><img src="images/git-add.png" /></div>
+
+
+
+
+
 
 
 
