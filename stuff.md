@@ -54,6 +54,8 @@ this allows you set the description along with the commit function
 git commit -am "<message>"
 ```
 this command allows you to combine the -a and the -m options 
+
+we will now see how you can use these commands to commit the changes you made to your personal blog!
   
 ![](insert screenshots with explanation below)
 
