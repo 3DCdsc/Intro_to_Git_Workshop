@@ -61,6 +61,12 @@ we will now see how you can use these commands to commit the changes you made to
 
 ## Viewing the committed History
 
+The ```git log``` command shows you all the committed snapshots. It is used to list and filter the project history and to search for any particular changes
+
+The log output can be personalized differently by allowing you to filter commits and to display them in an entirely user-defined format
+
+
+
 ## Deleting commits
 
 
