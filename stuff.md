@@ -118,6 +118,9 @@ git rm -r <directory>
 ```
 this command can be used to remove an entire directory from the repository 
 
+However we are not quite done yet! If you run the ```status``` command you will notice that the removal of the file is still in staging and needs to be committed to the repository. 
+
+![](insert screenshots with explanation below)
 
 
 
