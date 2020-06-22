@@ -97,7 +97,7 @@ these are just some of the most commonly used commands, to see the full list of 
 
 ![](insert screenshots with explanation below)
 
-## Deleting commits
+## Removing a File
 
 
 
