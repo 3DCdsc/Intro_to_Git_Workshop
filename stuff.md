@@ -125,16 +125,11 @@ Step 2: Enter all your personal details: your desired username, email Id and Pas
 <div style="text-align:center"><img src="images/personal.PNG" height = "500" width = "500" /></div>
 
 Step 3: Click the Complete any CAPTCHA puzzle you are asked to complete and hit "Join a Free Plan"
-<div style="text-align:center"><img src="images/captcha.PNG" height = "500" width = "800"  /></div>
+<div style="text-align:center"><img src="images/captcha.PNG" height = "400" width = "600"  /></div>
 
 Step 4: Select all your preferences 
-<div style="text-align:center"><img src="images/preferences.PNG" height = "300" width = "800" /></div>
-<div style="text-align:center"><img src="images/preferences2.PNG" height = "300" width = "800"  /></div>
-<div style="text-align:center"><img src="images/preferences3.PNG" height = "500" width = "750"  /></div>
-<div style="text-align:center"><img src="images/preferences4.PNG" height = "500" width = "800"  /></div>
 
 Step 5: Verify your email address 
-<div style="text-align:center"><img src="images/verify email.PNG" height = "300" width = "750"  /></div>
 
 Step 6: Skip any other step for now
 
@@ -142,7 +137,7 @@ Step 6: Skip any other step for now
 
 Step 1: On the upper right corner of any page on the GitHub website, click the "+" icon and then click the option that says "New Repository
 
-<div style="text-align:center"><img src="images/add-repo" /></div>
+<div style="text-align:center"><img src="images/add-repo.PNG" /></div>
 
 Step 2: Type in the name and the optional description for the new repository 
 
@@ -150,7 +145,7 @@ Step 3: Choose whether you would like to make this repository a public or a priv
 
 Step 4: You can choose to initialise your repository with a README file, which is essentially a document that describes your project. Let us go ahead and do this for now!
 
-<div style="text-align:center"><img src="images/git-repo-name" /></div>
+<div style="text-align:center"><img src="images/git-repo-name.PNG" height = "500" width = "700"/></div>
 
 
 
