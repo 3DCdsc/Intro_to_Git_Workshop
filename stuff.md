@@ -155,15 +155,17 @@ Step 1: In your repository's main page, click on the settings page
 
 <div style="text-align:center"><img src="images/settings.PNG"  /></div>
 
+
 Step 3: On the panel to your left, click on the "Manage Access" option 
 
 <div style="text-align:center"><img src="images/manage-access.PNG" height = "300" width = "300" /></div>
+
 
 Step 4: In this page, scroll to the bottom and click on the "Invite a Collaborator" option. You are now prompted to enter either the username, email ID or the full-name of your soon to be project collaborator. 
 
 You can either add your friends as collaborators or any of us. Our usernames are: slimechips, MarkHershey, SHSR2001. 
 
-Once you are done finding that person click on "Select a Collaborator Above"
+Once you are done finding that person click on "Select a collaborator above"
 
 <div style="text-align:center"><img src="images/add-collab.PNG"  height = "400" width = "600" /></div>
 
