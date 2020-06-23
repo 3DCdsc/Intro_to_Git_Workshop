@@ -137,7 +137,7 @@ Step 6: Skip any other step for now
 
 Step 1: On the upper right corner of any page on the GitHub website, click the "+" icon and then click the option that says "New Repository
 
-<div style="text-align:center"><img src="images/add-repo.PNG" height = "300" width = "400" /></div>
+<div style="text-align:center"><img src="images/add-repo.PNG" height = "225" width = "300" /></div>
 
 Step 2: Type in the name and the optional description for the new repository 
 
@@ -145,7 +145,7 @@ Step 3: Choose whether you would like to make this repository a public or a priv
 
 Step 4: You can choose to initialise your repository with a README file, which is essentially a document that describes your project. Let us go ahead and do this for now!
 
-<div style="text-align:center"><img src="images/git-repo-name.PNG" height = "500" width = "700"/></div>
+<div style="text-align:center"><img src="images/git-repo-name.PNG" height = "375" width = "562.5"/></div>
 
 ## Adding Collaborators to your personal repository
 
@@ -158,7 +158,8 @@ Step 1: In your repository's main page, click on the settings page
 
 Step 3: On the panel to your left, click on the "Manage Access" option 
 
-<div style="text-align:center"><img src="images/manage-access.PNG" height = "300" width = "300" /></div>
+<div style="text-align:center"><img src="images/manage-access.PNG" height = "225" width = "300" /></div>
+
 
 
 Step 4: In this page, scroll to the bottom and click on the "Invite a Collaborator" option. You are now prompted to enter either the username, email ID or the full-name of your soon to be project collaborator. 
@@ -167,9 +168,11 @@ You can either add your friends as collaborators or any of us. Our usernames are
 
 Once you are done finding that person click on "Select a collaborator above"
 
-<div style="text-align:center"><img src="images/add-collab.PNG"  height = "400" width = "600" /></div>
+<div style="text-align:center"><img src="images/add-collab.PNG"  height = "300" width = "450" /></div>
 
 ## GitHub Remote 
+
+
 
 
 
