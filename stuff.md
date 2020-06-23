@@ -127,6 +127,7 @@ Step 2: Enter all your personal details: your desired username, email Id and Pas
 Step 3: Click the Complete any CAPTCHA puzzle you are asked to complete and hit "Join a Free Plan"
 <div style="text-align:center"><img src="images/captcha.PNG" height = "400" width = "600"  /></div>
 
+
 Step 4: Select all your preferences 
 
 Step 5: Verify your email address 
