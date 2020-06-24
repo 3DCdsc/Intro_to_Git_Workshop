@@ -206,6 +206,7 @@ If you have done all of this successfully it should look something like this:
 
 ### Pushing to GitHub Remote
 
+In order to ensure a complete collaborative workflow, in addition to ```git add``` and ```git commit``` a third ```git push``` command is necessary! This is used to send all committed changes to remote repositories for collaboration. Thus team members get access to a set of all saved changes.
 
 
 
