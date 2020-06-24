@@ -185,6 +185,30 @@ We will now see how you can add a new remote to your Git repo
 
 ### Adding a Remote
 
+To add a new remote, we make use of the ```git remote add``` command on the terminal, in the directory where your repository is stored. The command takes in two arguments:
+  1) A unique remote name
+  2) A remote URL, which is found in the "Source" sub-tab of your GitHub repo (On the GitHub website). If you do not know where this is refer to the screenshot below 
+  
+  <div style="text-align:center"><img src="images/remote-URL.PNG" height = "300" width = "400"  /></div>
+  
+it should be executed in the following format:
+  
+```bash
+git add <remote name> <remote URL>
+```
+  
+Once this is done you could use the ``` git remote -v``` command to verify your remote
+  
+If you have done all of this successfully it should look something like this:
+  
+![](insert some screenshot here)
+
+
+### Pushing to GitHub Remote
+
+
+
+
 
 
 
