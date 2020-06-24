@@ -171,11 +171,19 @@ Once you are done finding that person click on "Select a collaborator above"
 
 <div style="text-align:center"><img src="images/add-collab.PNG"  height = "300" width = "450" /></div>
 
-## GitHub Remote 
+## Remote Repositories 
 
+Remote repositories come into the picture in situations where you need to share data with your team-mates. The way it works is that first, al modifications are made and committed locally as you have seen before! Once you are ready to share your changes with your team mates you can choose to upload these changes to a remote repository. The key takeaway here is that remote repositories act as a means for sharing and exchanging code between developers and not actually working on files.
 
+A noteworthy point here would be that while remote repositories do not actually differ much from local ones, a key differentiating factor between the two is the fact that a local repo has a working copy asscociated with it (a directory where some version of your project's files is checked out for you to work with), while remote repositories do not have any such working directories. 
 
+Given below is a pictorial representation of the local-remote workflow
 
+<div style="text-align:center"><img src="images/local-remote workflow.png" height = "500" width = "600"  /></div>
+
+We will now see how you can add a new remote to your Git repo
+
+### Adding a Remote
 
 
 
