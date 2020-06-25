@@ -189,7 +189,7 @@ To add a new remote, we make use of the ```git remote add``` command on the term
   1) A unique remote name
   2) A remote URL, which is found in the "Source" sub-tab of your GitHub repo (On the GitHub website). If you do not know where this is refer to the screenshot below 
   
-  <div style="text-align:center"><img src="images/remote-URL.PNG" height = "300" width = "400"  /></div>
+  <div style="text-align:center"><img src="images/remote-URL.PNG" height = "300" width = "500"  /></div>
   
 it should be executed in the following format:
   
@@ -208,6 +208,27 @@ If you have done all of this successfully it should look something like this:
 
 In order to ensure a complete collaborative workflow, in addition to ```git add``` and ```git commit``` a third ```git push``` command is necessary! This is used to send all committed changes to remote repositories for collaboration. Thus team members get access to a set of all saved changes.
 
+``` bash
+git push <remote> <branch>
+```
+This command allows you to push the specified branch into the specified remote.
+
+```bash
+git push <remote> --force
+```
+This command allows you to force a push when you need to replace the remote history with your local history. Force pushing is not considered to be a good practice and thus we advise you against using this command unless you are **absolutely** sure of what you are doing. 
+
+```bash
+git push <remote> --all
+```
+This command allows you to push all your local brnahces into the specified remote
+
+```bash
+git push <remote> --tags
+```
+This command allows you to send all your local tags to the remote repository. Tags are not automatically pushed when you push a branch or use the ```--all``` option 
+
+these are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help push``` command to see the man page for the Git Push tool. Alternatively you could view the [online documentation](https://git-scm.com/docs/git-push) here!
 
 
 
