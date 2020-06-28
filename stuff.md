@@ -255,8 +255,51 @@ There are a couple things you need to take care of to ensure that the merge goes
 
 Once you are ready to merge, execute the ``` git merge <branchname>``` command to merge ```<branchname>``` to the receiving branch
 
-### Conflicts and how to resolve them 
+## Fast Forward Merge
 
+This occurs when there is a linear path from the current branch tip to the target branch. In such a situation what Git needs to do is to "Fast Forward" the current branch tip to the target branch. What this essentially does is combining the histories of the two branches.
+
+<div style="text-align:center"><img src="images/fast-forward.jpg" /></div>
+
+Here is a pictorial depiction of how a fast forward merge works 
+
+### 3-Way Merge
+
+When there exists no linear path between the two branches (The branches are merged) then the only option the Git has is to combine them via a 3-Way merge. 3-Way merges use a dedicated commit to tie together the two histories. The nomenclature comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common ancestor.
+
+The merging diagram we presented to you earlier shows how 3-Way merging is carried out!
+
+### Resolving Merge Conflicts 
+
+Sometimes two developers will change the same line of code in two different ways and in such a case, Git can't tell which version is correct. Since that is something that only a developer can tell, merge conflicts must be resolved manually.
+
+If this happens you should see something like this in your screen
+
+```bash
+Auto-merging <file>
+CONFLICT (content): Merge conflict in <file>
+Automatic merge failed; fix conflicts and then commit the result.
+```
+Once you open the open the file in which there is a conflict you should see something like this:
+
+```
+<<<<<<< HEAD
+This is an edit on the master branch
+=======
+This is an edit on the <branch-name> branch
+>>>>>>> <branch-name>
+
+```
+
+The "<<" charecters denotes the current branch's edits and the "==" sign denotes the end of the first section. The second section is where the edits are from the attempted merge, and it starts with the "==" signs and ends with the ">>" signs.
+
+Since you are the developer, you get to decide what stays and what goes. Make your edits as required and then close the file. Once you are done with this follow the directions to add the files and then commit.
+
+You can find advanced information on Git merging and merge-conflict resolution [right here](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging).
+
+
+
+ 
 
 
 
