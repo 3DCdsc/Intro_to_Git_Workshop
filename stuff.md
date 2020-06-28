@@ -212,6 +212,8 @@ Git branches are essentially a pointer to a snapshot of your changes! It is good
 
 In this image, the repository contains two isolated lines of development of a little feature and a longer running feature. You can thus visualize how through branching developers can not only work on the two features simulataneouly but can also be rest assured that the master branch is kept free from possibly unstable code. 
 
+Do note that the master branch is the name of the default branch. In this picture the central line of development depicts the master branch.
+
 How this works is that Git stores a branch as a reference to a commit. In other words, a branch represents the tip of a series of commits and is not a container of for commits. 
 
 Let us know take a look at some of the common options in branching 
@@ -230,6 +232,33 @@ this command creates a new branch named ```<branch>```
 git branch -d <branch>
 ```
 this command allows you to delete the specified branch 
+
+## Merges
+
+The ```git merge``` command is essentially used to take two independent lines of development created by ```git branch``` and integrate them into a single branch. Let us take a closer look on how this works:
+
+The ```git merge``` commit will combine multiple sequences of commits into one unified history. We will now focus on the merging of two branches even though this concept can be extended to include more than two branches. What ```git merge``` does is it takes two commit pointers (Generally the tip) and finds a common base commit between them so that it can create a new "merge commit" that combines the changes of each queued merge commit sequence.
+
+<div style="text-align:center"><img src="images/Branch-1.png" /></div>
+<div style="text-align:center"><img src="images/Branch-2.png" /></div>
+
+Here is a pictorial representation of how this is done!
+
+### Preparing to Merge
+
+There are a couple things you need to take care of to ensure that the merge goes smoothly:
+
+1) Confirming the receiving branch: Execute ```git status``` to ensure that the``` HEAD``` is pointed to the correct merge-receiving branch 
+2) Making sure that the receiving branch and the merging branch are up-to-date with the latest remote changes
+
+### Merging 
+
+Once you are ready to merge, execute the ``` git merge <branchname>``` command to merge ```<branchname>``` to the receiving branch
+
+### Conflicts and how to resolve them 
+
+
+
 
 
 
