@@ -204,6 +204,32 @@ This command allows you to send all your local tags to the remote repository. Ta
 these are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help push``` command to see the man page for the Git Push tool. Alternatively you could view the [online documentation](https://git-scm.com/docs/git-push) here!
 
 
+## Branching 
+
+Git branches are essentially a pointer to a snapshot of your changes! It is good practice to spawn a branch everytime you want to add a new feature or fix a bug to encapsulate your changes. By doing so the chances of unstable code being merged into the main code base will become lesser. 
+
+<div style="text-align:center"><img src="images/branching.png" /></div>
+
+In this image, the repository contains two isolated lines of development of a little feature and a longer running feature. You can thus visualize how through branching developers can not only work on the two features simulataneouly but can also be rest assured that the master branch is kept free from possibly unstable code. 
+
+How this works is that Git stores a branch as a reference to a commit. In other words, a branch represents the tip of a series of commits and is not a container of for commits. 
+
+Let us know take a look at some of the common options in branching 
+
+```bash
+git branch
+```
+This command lists all the branches in your repository 
+
+```bash
+git branch <branch>
+```
+this command creates a new branch named ```<branch>```
+
+```bash
+git branch -d <branch>
+```
+this command allows you to delete the specified branch 
 
 
 
