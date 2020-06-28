@@ -65,12 +65,6 @@ git log --oneline
 ```
 this command allows you to fit each commit into a single line, which comes in handy when you would like to get an overview of the project history
 
-```bash
-git log --author <name>
-git log --committer <name>
-```
-these commands allows you to filter all commits by either the person who wrote or committed the change
-
 these are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help log``` command to see the man page for the Git Log tool. Alternatively you could view the [online documentation](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) here!
 
 ## Removing a File
