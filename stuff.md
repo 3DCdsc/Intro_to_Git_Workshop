@@ -25,15 +25,6 @@ git add <directory>
 this allows you to stage all changes in your directory for the next commit 
 
 ```bash
-git add -p
-```
-  1. Use y to stage a specific portion 
-  2. Use n to ignore a specific portion 
-  3. Use s to divide the portion into smaller parts
-  4. Use e to edit the portion manually 
-  5. Use q to exit the interactive session 
-  
-```bash
 git commit 
 ```
 this allows you to commit the staged snapshot. Once this command is run you will be prompted to type in the description of the commit using a text editor
@@ -70,11 +61,6 @@ git log
 this command allows you to view the entire commit history. It uses space for scrolling and q for exiting if the log output takes up multiple screens
 
 ```bash
-git log -<n>
-```
-this command allows you to limit the number of commits displayed to n most recent ones
-
-```bash
 git log --oneline
 ```
 this command allows you to fit each commit into a single line, which comes in handy when you would like to get an overview of the project history
@@ -84,13 +70,6 @@ git log --author <name>
 git log --committer <name>
 ```
 these commands allows you to filter all commits by either the person who wrote or committed the change
-
-```bash
-git log --before <date>
-git log --after <date>
-git log --after <date> --before <date>
-```
-these commands allows you to filter all commits by date range
 
 these are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help log``` command to see the man page for the Git Log tool. Alternatively you could view the [online documentation](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) here!
 
