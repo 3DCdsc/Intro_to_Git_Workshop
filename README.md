@@ -123,4 +123,18 @@ You will find the files listed under **untracked files**.
 
 ![](imgs/stagingarea.png)
 
-The **staging area** can be thought of as the intermediary between your folder (working directory) and the git repository
+- The **staging area** can be thought of as the intermediary between your folder (working directory) and the git repository. In the staging area, you decide and **mark** which files that you have added/modified/removed should be updated into the git repository.
+- After marking the files (i.e. adding them to the staging area), you need to **commit** these marked changes for the changes to finally be reflected in the local git repository
+- Run the following command **mark** a certain file that you have added/modified/removed to be updated.
+```bash
+git add fileToAdd.txt
+```
+- Alternatively, you can run the following commmand to add all files in a directory to a commit
+```bash
+git add fileDirectoryName
+```
+- If you just want to add ALL changes you have made in your current directory, just run
+```bash
+git add -A
+```
+- **IMPORTANT**: You have only **marked** the files that you want to update, but the update has not yet happened. Remember, you need to commit these files
