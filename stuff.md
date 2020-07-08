@@ -297,6 +297,56 @@ Since you are the developer, you get to decide what stays and what goes. Make yo
 
 You can find advanced information on Git merging and merge-conflict resolution [right here](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging).
 
+## Forking and Pull Requests 
+
+We will now be talking about two new concepts which are Forks and Pull Requests. Let us first begin by understanding what forking is.
+
+Assuming that the below diagram represents a repository. Now let us say that this repository is sitting on GitHub in 3DC's account. Suppose you want to have a copy of this repository as it is on your account as well so that you can access everything that is inside this repository and make changes to the stuff that is in there without afeecting what is currently sitting on 3DC's account. To do this you will need to "Fork" the repository. What this does is that it takes an entirely different instance of the repo and adds it to your account. 
+
+
+<div style="text-align:center"><img src="images/fork.PNG" /></div>
+
+Now let us turn our attention to pull requests. Assuming that you have now made some changes to the forked repository and you believe would these changes would add great value to the original repository as well then you could "send" whatever changes you have made back to the original repository in the form of a pull request. After you send in the pull request it is entirely up to 3DC to accept or reject that pull request. 
+
+Now that we have discussed the concepts behind forks and pull requests let us now actually implement these concepts and see how it works in action!
+
+To fork a repository you must simply go to the repository's page and hit the fork button on the top right corner. 
+
+<div style="text-align:center"><img src="images/Fork1.PNG" /></div>
+
+The next step would be to choose the repo to which you would like to fork
+
+<div style="text-align:center"><img src="images/Fork2.PNG" /></div>
+
+Once you do this you would have now sucessfully forked the given repo into your account.
+
+<div style="text-align:center"><img src="images/Fork3.PNG" /></div>
+
+<div style="text-align:center"><img src="images/Fork4.PNG" /></div>
+
+Now let us go and make some changes to the pulled repo
+
+![](insert some screenshot here)
+
+Once you do this, commit the changes to the master branch of your pulled repo 
+
+![](insert some screenshot here)
+
+Once you do this, you should no click on "New Pull Request" and open a pull request and once you are done writing the title and the comment of the pull request hit "Create a pull request" and you should see something like this appear on your screen!
+
+![](insert some screenshot here)
+
+And once this is done you should be able to see something like this!
+
+![](insert some screenshot here)
+
+
+
+
+
+
+
+
 
 
  
