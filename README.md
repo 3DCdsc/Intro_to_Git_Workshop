@@ -3,8 +3,8 @@
 
 ## Session Date (Tentatively)
 
-- 9th July 2020 (Thu)
 - 16th July 2020 (Thu)
+- 23rd July 2020 (Thu)
 
 ## Platform
 
