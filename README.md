@@ -3,16 +3,17 @@
 
 ## Session Date (Tentatively)
 
-- 16th July 2020 (Thu)
-- 23rd July 2020 (Thu)
+- 16th July 2020 (Thu 8:30pm
+- 23rd July 2020 (Thu) 8:30pm
 
 ## Platform
 
-- Discord (TBC)
+- Twitch
+- Pigeonhole
 
 ## Lesson Material
 
-- [Main Lesson Document]()
+- [Main Lesson Document]
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
