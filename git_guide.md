@@ -142,14 +142,14 @@ git config --global user.email "tom@example.com"
 
 1. Go to your interested GitHub repository page, copy the `clone` URL
 
-    <img src="pics/git_clone.png" alt="" width=300 height=auto>
+    <img src="images/git_clone.png" alt="" width=300 height=auto>
 
 
 2. Use terminal and navigate to the root directory you wish to clone the repo into.
 
 3. Example: `git clone https://GitHub.com/MarkHershey/notebook.git`
 
-<img src="pics/git_clone_2.png" alt="" width=600 height=auto>
+<img src="images/git_clone_2.png" alt="" width=600 height=auto>
 
 #### `git push`
 

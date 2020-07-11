@@ -1,4 +1,4 @@
-# Intro to Git Workshop
+# Intro to Git & GitHub Workshop
 ---
 ## Lesson 0 - Workshop Preparation: Git Installation
 
