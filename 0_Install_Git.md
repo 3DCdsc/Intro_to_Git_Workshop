@@ -1,5 +1,5 @@
 # Intro to Git Workshop
-
+---
 ## Lesson 0 - Workshop Preparation: Git Installation
 
 ### For Windows User
@@ -12,9 +12,9 @@
 - Open **Terminal** app on your macOS, use **Spotlight** to search for it if you can't find it from **Launchpad**.
 - Just copy and paste the following command in your **terminal**, then hit `enter` key, to check your `git` version, it will prompt you to install `Git` if you don't have it.
 
-```bash
-git --version
-```
+    ```bash
+    git --version
+    ```
 
 ### For Linux (Ubuntu/Debian) User
 
@@ -64,3 +64,8 @@ git config --global user.name "Tom Cruise"
 git config --global user.email "tom@example.com"
 
 ```
+
+---
+
+Reference:
+ - [Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
