@@ -12,7 +12,7 @@
 
 ## Lesson Material
 
-- [Main Lesson Document]()
+- [Main Lesson Document](jason.md)
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
