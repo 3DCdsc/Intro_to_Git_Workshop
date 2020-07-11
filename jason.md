@@ -14,7 +14,6 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 5. [Creating your first Git Repository](#creating-your-first-git-repository)
 6. [Checking the status of your Git Repository](#checking-the-status-of-your-git-repository)
 7. [Adding files to your Git Repository](#adding-files-to-your-git-repository)
-   1. [The Staging Area](#the-staging-area)
 8. [Staging, Committing and pushing Changes](#staging-committing-and-pushing-changes)
 9. [Viewing the committed History](#viewing-the-committed-history)
 10. [Removing a File](#removing-a-file)
@@ -32,6 +31,7 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
    1. [3-Way Merge](#3-way-merge)
    2. [Resolving Merge Conflicts](#resolving-merge-conflicts)
 18. [Forking and Pull Requests](#forking-and-pull-requests)
+19. [Hosting your Website on Github Pages](#hosting-your-website-on-github-pages)
   
 
 ## What is Git and why should I learn Git?  
@@ -126,7 +126,7 @@ You will understand meaning of the messages later.
 
 ## Adding files to your Git Repository
 
-[Download]() the following files, which contains a template for a personal website, and place them inside your folder with the git repository.
+[Download](https://github.com/kaypohleb/js-teaching) the following files, which contains a template for a personal website, and place them inside your folder with the git repository.
 
 While the files are already in the folder (**working directory**), they have not yet been "added" to the **repository** per say, you need to **manually add** these files into the repository using git commands.
 
@@ -136,27 +136,11 @@ You can confirm this by using `git status` to check. You will see something like
 
 You will find the files listed under **untracked files**.
 
-### The Staging Area
+## Staging, Committing and pushing Changes
 
 ![](imgs/stagingarea.png)
 
 - The **staging area** can be thought of as the intermediary between your folder (working directory) and the git repository. In the staging area, you decide and **mark** which files that you have added/modified/removed should be updated into the git repository.
-- After marking the files (i.e. adding them to the staging area), you need to **commit** these marked changes for the changes to finally be reflected in the local git repository
-- Run the following command **mark** a certain file that you have added/modified/removed to be updated.
-```bash
-git add fileToAdd.txt
-```
-- Alternatively, you can run the following commmand to add all files in a directory to a commit
-```bash
-git add fileDirectoryName
-```
-- If you just want to add ALL changes you have made in your current directory, just run
-```bash
-git add -A
-```
-- **IMPORTANT**: You have only **marked** the files that you want to update, by adding them to the staging area, but the update has not yet happened. Remember, you need to commit these files
-
-## Staging, Committing and pushing Changes
 
 The ```git add``` command is used to add changes in the working directory to the staging area. It is used to tell Git that you would like to include updates to a particular file in the next commit. However, ```git add``` does not actually record any change until you run the ```git commit```command
 
@@ -355,9 +339,9 @@ This command allows you to push all your local brnahces into the specified remot
 ```bash
 git push <remote> --tags
 ```
-This command allows you to send all your local tags to the remote repository. Tags are not automatically pushed when you push a branch or use the ```--all``` option 
+This command allows you to send all your local tags to the remote repository. Tags are not automatically pushed when you push a branch or use the ```--all``` option. 
 
-these are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help push``` command to see the man page for the Git Push tool. Alternatively you could view the [online documentation](https://git-scm.com/docs/git-push) here!
+These are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help push``` command to see the man page for the Git Push tool. Alternatively you could view the [online documentation](https://git-scm.com/docs/git-push) here!
 
 
 ## Branching 
@@ -496,22 +480,16 @@ And once this is done you should be able to see something like this!
 
 ![](insert some screenshot here)
 
+## Hosting your Website on Github Pages
 
+Github Pages is an easy way to host static websites containing HTML, CSS, and JavaScript files straight from a repository on GitHub. Yes that means, you can publish the website files from your Github repository directly!
 
+Note that this Github Page website will be published on the following URL as a project website: `http(s)://<user>.github.io/<repository>`
 
+Start by going to your online repository on Github (or you can use the one you forked). The steps are simple. 
 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
+1. Go to the repository settings ![](imgs/ss-github-pages-1.png)
+2. Scroll down to the **Github Pages** section
+3. From here, select the source branch to the **master** branch. (*Note that you can only select the master branch or none*) ![](imgs/ss-github-pages-2.png)
+4. After selection, give Github about a minute or so to publish your website (go ahead and make a coffee or something). Refresh the page, scroll back down to the Github Pages section and you should see a message telling you your page has been published! ![](imgs/ss-github-pages-3.png)
+5. Click on the link provided and you should see your static website up and running. Go ahead and click on the link to play around with your new website! ![](imgs/ss-github-pages-4.png)
