@@ -1,10 +1,21 @@
 # Intro to Git Workshop
 
 
-## Session Date (Tentatively)
+## Session Date
 
-- 16th July 2020 (Thu) 8:30pm
-- 23rd July 2020 (Thu) 8:30pm
+- 0 - *Git Installation*
+    - Please finish git installation on your computer before attending session 1.
+    - Self-paced
+
+
+- 1 - *Git on Your Machine*
+    - **16 July 2020 (Thu) 8:30pm - 10:30pm**
+    - Instructor: [Mark Huang](https://github.com/MarkHershey)
+
+
+- 2 - *Git on Collaboration with GitHub*
+    - **23 July 2020 (Thu) 8:30pm - 10:30pm**
+    - Instructor: [Jason Chow](https://github.com/slimechips)
 
 ## Platform
 
