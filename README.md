@@ -26,7 +26,7 @@
 
 - [Session 0: Git Installation](0_Install_Git.md)
 - [Session 1: Git on Your Local Machine](1_Git_On_Your_Machine.md)
-- [Session 2: Git on Collaboration with GitHub]()
+- [Session 2: Git on Collaboration with GitHub](2_Git_With_Github.md)
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
