@@ -36,7 +36,7 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 
 ## What is Git and why should I learn Git?  
 
-<div style="text-align:center"><img src="imgs/git.png" /></div>
+<div style="text-align:center"><img src="images/git.png" /></div>
 
 Git is a version control tool. It helps you to manage the project history of modern projects (usually software). It is almost always an essential tool when collaborating with others on software projects.
 
@@ -44,7 +44,7 @@ Modern projects are usually iteratively improved, and Git helps us to manage the
 
 ## What is GitHub and how is it different from Git?
 
-<div style="text-align:center"><img src="imgs/github.png" /></div>
+<div style="text-align:center"><img src="images/github.png" /></div>
 
 Github is a popular Git repository hosting service. A Git repository is a virtual Git collection, containing different versions of your project files. You can find many Git repositories on Github's website (www.github.com)
 
@@ -108,7 +108,7 @@ git init
 ```
 
 You should see a message acknowledging the creation of the git repository.
-![](imgs/ss-gitinit.png)
+![](images/ss-gitinit.png)
 
 ## Checking the status of your Git Repository
 
@@ -120,7 +120,7 @@ git status
 
 You should see something like this: 
 
-![](imgs/ss-gitstatus.png)
+![](images/ss-gitstatus.png)
 
 You will understand meaning of the messages later.
 
@@ -138,7 +138,7 @@ You will find the files listed under **untracked files**.
 
 ## Staging, Committing and pushing Changes
 
-![](imgs/stagingarea.png)
+![](images/stagingarea.png)
 
 - The **staging area** can be thought of as the intermediary between your folder (working directory) and the git repository. In the staging area, you decide and **mark** which files that you have added/modified/removed should be updated into the git repository.
 
@@ -488,8 +488,8 @@ Note that this Github Page website will be published on the following URL as a p
 
 Start by going to your online repository on Github (or you can use the one you forked). The steps are simple. 
 
-1. Go to the repository settings ![](imgs/ss-github-pages-1.png)
+1. Go to the repository settings ![](images/ss-github-pages-1.png)
 2. Scroll down to the **Github Pages** section
-3. From here, select the source branch to the **master** branch. (*Note that you can only select the master branch or none*) ![](imgs/ss-github-pages-2.png)
-4. After selection, give Github about a minute or so to publish your website (go ahead and make a coffee or something). Refresh the page, scroll back down to the Github Pages section and you should see a message telling you your page has been published! ![](imgs/ss-github-pages-3.png)
-5. Click on the link provided and you should see your static website up and running. Go ahead and click on the link to play around with your new website! ![](imgs/ss-github-pages-4.png)
+3. From here, select the source branch to the **master** branch. (*Note that you can only select the master branch or none*) ![](images/ss-github-pages-2.png)
+4. After selection, give Github about a minute or so to publish your website (go ahead and make a coffee or something). Refresh the page, scroll back down to the Github Pages section and you should see a message telling you your page has been published! ![](images/ss-github-pages-3.png)
+5. Click on the link provided and you should see your static website up and running. Go ahead and click on the link to play around with your new website! ![](images/ss-github-pages-4.png)
