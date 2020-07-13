@@ -21,21 +21,32 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
    1. [3-Way Merge](#3-way-merge)
    2. [Resolving Merge Conflicts](#resolving-merge-conflicts)
 
-## What is Git and why should I learn Git?  
+## What is Git?
 
-<div style="text-align:center"><img src="images/git.png" /></div>
+**`Git`** is distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you're used to working with centralised version control systems, this is a big difference!
 
-Git is a version control tool. It helps you to manage the project history of modern projects (usually software). It is almost always an essential tool when collaborating with others on software projects.
+## What is the difference between Git and GitHub?
 
-Modern projects are usually iteratively improved, and Git helps us to manage these small iterations efficiently and cleanly.
+#### TLDR:
+- **`Git`** is a version control software that manages your local git repositories.
+- **`GitHub`** is an online hosting service for your `git` repositories.
 
-## What is GitHub and how is it different from Git?
+#### Long version:
 
-<div style="text-align:center"><img src="images/github.png" /></div>
+<div style="text-align:center"><img src="images/Git-Logo.png" style="max-height:200px; padding:10px"></div>
 
-Github is a popular Git repository hosting service. A Git repository is a virtual Git collection, containing different versions of your project files. You can find many Git repositories on Github's website (www.github.com)
+- **`Git`** is open-source software that helps you manage code versions, keep track of file changes. You can interact with `git` using CLI (Command Line Interface), meaning you type in git commands in your shell/ terminals. Alternatively, you can choose to use a third-party GUI (Graphical User Interface) from [here](https://git-scm.com/downloads/guis/).
 
-We will first start with the fundamentals of Git.
+<div style="text-align:center"><img src="images/github_logo.png" style="max-height:200px"></div>
+
+- **`GitHub`** is an online platform developed by a company and then acquired by Microsoft in 2018. GitHub, the platform, provides free hosting service for git repositories, which usually contains code or text files. It also enables collaboration on projects, since the repository is hosted on the cloud, teams can collaborate on the project repository from different locations. GitHub is an online service that is built around git, making git more convenient and powerful for programmers especially teams.
+
+## Why should you learn Git?
+
+- **`Git`** is essential for software development, any software engineering position would expect you to know how to use Git by default.
+- **`Git`** also can be used for your personal projects and/or school projects to avoid this:
+
+<div style="text-align:center"><img src="images/final_version_meme.png" style="max-height:200px"></div>
 
 
 ## Creating your first Git Repository
@@ -46,14 +57,25 @@ For now, we shall start by creating a local Git repository.
 1. Navigate to a local location in your computer
 2. Create an empty folder for your repository.
 3. Open the folder in your Git Bash/Terminal (Hint: Right Click inside your empty folder, select `Open in Git Bash` or `Open in Terminal`)
-4. Use the following command to initalise a git repository inside this folder
+4. Use the following command to initialise a git repository inside this folder
 
-```bash
-git init
-```
+    ```bash
+    git init
+    ```
 
 You should see a message acknowledging the creation of the git repository.
-![](images/ss-gitinit.png)
+
+<div style="text-align:center"><img src="images/git_init_1.png" style="max-height:600px"></div>
+
+
+### What Does `git init` Do?
+
+`git init` turns any directory into a Git repository.
+- git init is one way to start a new project with Git. To start a repository, use either `git init` or `git clone` - not both. We will learn `git clone` in the second session of this workshop.
+
+- To initialise a repository, `Git` creates a hidden directory called `.git`. That directory stores all of the objects and refs that `Git` uses and creates as a part of your project's history. This hidden `.git` directory is what separates a regular directory from a `Git` repository.
+
+<div style="text-align:center"><img src="images/git_init_2.png" style="max-height:600px"></div>
 
 ## Checking the status of your Git Repository
 
@@ -65,7 +87,7 @@ git status
 
 You should see something like this:
 
-![](images/ss-gitstatus.png)
+<div style="text-align:center"><img src="images/git_status_1.png" style="max-height:600px"></div>
 
 You will understand meaning of the messages later.
 

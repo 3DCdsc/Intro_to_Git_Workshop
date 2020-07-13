@@ -8,29 +8,30 @@
     - Self-paced
 
 
-- 1 - *Git on Your Machine*
+- 1 - *Git Locally*
     - **16 July 2020 (Thu) 8:30pm - 10:30pm**
     - Instructor: [Mark Huang](https://github.com/MarkHershey)
+    - Live on Twitch
 
 
-- 2 - *Git on Collaboration with GitHub*
+- 2 - *Git with GitHub*
     - **23 July 2020 (Thu) 8:30pm - 10:30pm**
     - Instructor: [Jason Chow](https://github.com/slimechips)
+    - Live on Twitch
 
 ## Platform
 
-- Twitch
+- Twitch - [Live Stream Link](https://www.twitch.tv/3dcdsc)
 - Pigeonhole
 
 ## Lesson Material
 
 - [Session 0: Git Installation](0_Install_Git.md)
-- [Session 1: Git on Your Local Machine](1_Git_On_Your_Machine.md)
-- [Session 2: Git on Collaboration with GitHub]()
+- [Session 1: Git Locally](1_Git_Locally.md)
+- [Session 2: Git with GitHub]()
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
-- [Git Reference by Mark](git_guide.md)
 
 ## Contributors
 
