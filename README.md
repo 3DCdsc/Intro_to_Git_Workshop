@@ -27,8 +27,8 @@
 ## Lesson Material
 
 - [Session 0: Git Installation](0_Install_Git.md)
-- [Session 1: Git Locally](1_Git_Locally.md)
-- [Session 2: Git with GitHub]()
+- [Session 1: Git Locally] - To be released
+- [Session 2: Git with GitHub] - To be released
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
