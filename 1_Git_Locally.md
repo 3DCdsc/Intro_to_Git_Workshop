@@ -49,19 +49,32 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 <div style="text-align:center"><img src="images/final_version_meme.png" style="max-height:200px"></div>
 
 
+## Basic Shell Commands
+
+Open your Terminal / Shell on your computer:
+
+| Windows | MacOS |
+| :---: | :---:|
+| <img src="images/win_bash_app.jpeg" style="max-height:200px"> | <img src="images/mac_term.png" style="max-height:200px"> |
+
+- `ls` for List
+    - `ls -a` for List All
+    - `ls -la` for List All with details
+- `cd` for Change Directory
+- `mkdir` for Make Directory
+- `touch` to create a new file
+- `pwd` for Print/present Working Directory
+
 ## Creating your first Git Repository
 
-Recall a Git repository is a virtual Git collection, containing different versions of your project files. This git repository can reside inside a local folder inside your computer, and it can also be linked to a remote repository on somewhere like Github. (This concept is somewhat similar to a file-hosting website like Dropbox)
+>Recall a Git repository is a virtual Git collection, containing different versions of your project files. This git repository can reside inside a local folder inside your computer, and it can also be linked to a remote repository on somewhere like Github. (This concept is somewhat similar to a file-hosting website like Dropbox)
 
-For now, we shall start by creating a local Git repository.
-1. Navigate to a local location in your computer
-2. Create an empty folder for your repository.
-3. Open the folder in your Git Bash/Terminal (Hint: Right Click inside your empty folder, select `Open in Git Bash` or `Open in Terminal`)
-4. Use the following command to initialise a git repository inside this folder
+```bash
+mkdir my_project
+cd my_project
 
-    ```bash
-    git init
-    ```
+git init
+```
 
 You should see a message acknowledging the creation of the git repository.
 
@@ -71,7 +84,7 @@ You should see a message acknowledging the creation of the git repository.
 ### What Does `git init` Do?
 
 `git init` turns any directory into a Git repository.
-- git init is one way to start a new project with Git. To start a repository, use either `git init` or `git clone` - not both. We will learn `git clone` in the second session of this workshop.
+- `git init` is one way to start a new project with Git. To start a repository, use either `git init` or `git clone` - not both. We will learn `git clone` in the second session of this workshop.
 
 - To initialise a repository, `Git` creates a hidden directory called `.git`. That directory stores all of the objects and refs that `Git` uses and creates as a part of your project's history. This hidden `.git` directory is what separates a regular directory from a `Git` repository.
 
@@ -79,7 +92,7 @@ You should see a message acknowledging the creation of the git repository.
 
 ## Checking the status of your Git Repository
 
-To check the status of your Git repository (as a sanity check or whatever), you can use the following command. This command also checks that the git repository has been initialised.
+To check the status of your `git` repository (as a sanity check or whatever), you can use the following command. This command also checks that the `git` repository has been initialised.
 
 ```bash
 git status
@@ -89,19 +102,44 @@ You should see something like this:
 
 <div style="text-align:center"><img src="images/git_status_1.png" style="max-height:600px"></div>
 
-You will understand meaning of the messages later.
 
 ## Adding files to your Git Repository
 
-[Download](https://github.com/kaypohleb/js-teaching) the following files, which contains a template for a personal website, and place them inside your folder with the git repository.
+### create some dummy files
 
-While the files are already in the folder (**working directory**), they have not yet been "added" to the **repository** per say, you need to **manually add** these files into the repository using git commands.
+create a new file called `hello_1.txt`
+```bash
+touch hello_1.txt
+```
 
-You can confirm this by using `git status` to check. You will see something like this:
+create a new file called `hello_2.txt`
+```bash
+touch hello_2.txt
+```
 
-![](insert some img here)
+create a new file called `hello_3.txt`
+```bash
+touch hello_3.txt
+```
 
-You will find the files listed under **untracked files**.
+- Run `git status` You will find the files listed under **untracked files**.
+    <div style="text-align:center"><img src="images/git_add_0.png" style="max-height:600px"></div>
+- While the files are already in the folder (**working directory**), they have not yet been "added" to the **repository** per say, you need to **manually add** these files into the repository using git commands.
+
+### `git add <file>`
+
+```bash
+git add hello_1.txt
+```
+
+- `git status`
+    <div style="text-align:center"><img src="images/git_add_1.png" style="max-height:600px"></div>
+
+
+- Any changes you made inside a `git` repository have to be **staged** first before **committing**.
+- It is a way to let `git` know what are the files/changes you want `git` to keep track of.
+- `git add <filename>` stages your changes on `<filename>`.
+- `git add -all` stages all your untracked changes within the repository.
 
 ## Staging, Committing and pushing Changes
 
