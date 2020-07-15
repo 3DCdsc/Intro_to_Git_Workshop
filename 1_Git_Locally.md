@@ -181,9 +181,9 @@ In addition to including the commit message, this option allows you to skip the 
 
 
 
-## Viewing the committed History
+## Viewing Your Commit History
 
-The ```git log``` command shows you all the committed snapshots. It is used to list and filter the project history and to search for any particular changes
+The `git log` command shows you all the committed snapshots. It is used to list and filter the project history and to search for any particular changes
 
 The log output can be personalized differently by allowing you to filter commits and to display them in an entirely user-defined format
 
@@ -317,3 +317,10 @@ The "<<" charecters denotes the current branch's edits and the "==" sign denotes
 Since you are the developer, you get to decide what stays and what goes. Make your edits as required and then close the file. Once you are done with this follow the directions to add the files and then commit.
 
 You can find advanced information on Git merging and merge-conflict resolution [right here](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging).
+
+
+## Git GUI Tools
+
+### Shell Integration
+
+### Editor Integration
