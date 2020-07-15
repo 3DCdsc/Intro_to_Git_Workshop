@@ -51,7 +51,7 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 
 ## Basic Shell Commands
 
-Open your Terminal / Shell on your computer:
+Launch your Terminal / Shell on your computer:
 
 | Windows | MacOS |
 | :---: | :---:|
@@ -65,7 +65,7 @@ Open your Terminal / Shell on your computer:
 - `touch` to create a new file
 - `pwd` for Print/present Working Directory
 
-## Creating your first Git Repository
+## Creating your first Git Repository - One Person Starting a New Repository Locally
 
 >Recall a Git repository is a virtual Git collection, containing different versions of your project files. This git repository can reside inside a local folder inside your computer, and it can also be linked to a remote repository on somewhere like Github. (This concept is somewhat similar to a file-hosting website like Dropbox)
 
@@ -136,60 +136,49 @@ git add hello_1.txt
     <div style="text-align:center"><img src="images/git_add_1.png" style="max-height:600px"></div>
 
 
+
+
+## The Staging Area
+
+<div style="text-align:center"><img src="images/git_staging_area.png" style="max-height:600px; padding:10px"></div>
+
+Concepts:
+
 - Any changes you made inside a `git` repository have to be **staged** first before **committing**.
 - It is a way to let `git` know what are the files/changes you want `git` to keep track of.
+- The **staging area** can be thought of as the intermediary between your `folder (working directory)` and the `git repository`. Files in the staging area are the files that will be captured in the snapshot in the next commit.
+
+Commands:
+
 - `git add <filename>` stages your changes on `<filename>`.
-- `git add -all` stages all your untracked changes within the repository.
+- `git add --all` or `git add -A` stages all files, including new, modified, and deleted files, including files in the current directory and in higher directories that still belong to the same git repository.
+- `git rm --cached <filename>` **unstages** a file, move it from `staging area` to `untracked`.
 
-## Staging, Committing and pushing Changes
 
-![](images/stagingarea.png)
+## `git commit`
+In a Git project timeline, commits are like the core building blocks! They can be thought of as milestones along the timeline of a Git project. Just like keyframes in an animation. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.
 
-- The **staging area** can be thought of as the intermediary between your folder (working directory) and the git repository. In the staging area, you decide and **mark** which files that you have added/modified/removed should be updated into the git repository.
-
-The ```git add``` command is used to add changes in the working directory to the staging area. It is used to tell Git that you would like to include updates to a particular file in the next commit. However, ```git add``` does not actually record any change until you run the ```git commit```command
-
-Let us take a closer look on how these commands actually work!
-
-First, you need to edit your files in your working directory. Once you have done that and you are ready to save a copy of your project, you stage the changes using the ```git add``` command. Once you are happy with this staged snapshot, you can commit it to the project history using ```git commit```. The ```git reset``` command can be used to undo a commit or a staged snapshot.
-
-In a Git project timeline, commits are like the core building blocks! They can be thought of as milestones along the timeline of a Git project. Git snapshots are always committed to the local repository. Each developer's local repository acts as the buffer between their contributions and the central repository.
-
-<div style="text-align:center"><img src="images/git-add.png" /></div>
-
-Here are some common options:
-
-```bash
-git add <file>
+- *commit*
 ```
-this allows you to stage all changes in your file for the next commit
-
-```bash
-git add <directory>
-```
-this allows you to stage all changes in your directory for the next commit
-
-```bash
 git commit
 ```
-this allows you to commit the staged snapshot. Once this command is run you will be prompted to type in the description of the commit using a text editor
+This starts the commit process, but since it doesn't include a `-m` flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be `Vim`. (To get out, press esc, then `:wq`, and then Enter.)
 
+- *commit with one-line commit message*
 ```bash
-git commit -a
+git commit -m "descriptive commit message"
 ```
-this allows you to commit a snapshot of the changes done in the whole working directory
-
+- *one-line commit message example*
 ```bash
-git commit -m "<message>"
+git commit -m "update the README.md with link to contributing guide"
 ```
-this allows you set the description along with the commit function
 
-```bash
-git commit -am "<message>"
+- *combine git add and git commit*
 ```
-this command allows you to combine the -a and the -m options
+git commit -am "descriptive commit message"
+```
+In addition to including the commit message, this option allows you to skip the staging phase. The addition of -a will automatically stage any files that are already being tracked by Git (changes to files that you've committed before).
 
-we will now see how you can use these commands to commit the changes you made to your personal blog!
 
 
 ## Viewing the committed History
