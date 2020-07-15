@@ -84,6 +84,12 @@ You should see a message acknowledging the creation of the git repository.
 ### What Does `git init` Do?
 
 `git init` turns any directory into a Git repository.
+
+- Two Scenarios:
+    1. Start a fresh project locally
+    2. Make an existing local project into a `git` repository.
+
+
 - `git init` is one way to start a new project with Git. To start a repository, use either `git init` or `git clone` - not both. We will learn `git clone` in the second session of this workshop.
 
 - To initialise a repository, `Git` creates a hidden directory called `.git`. That directory stores all of the objects and refs that `Git` uses and creates as a part of your project's history. This hidden `.git` directory is what separates a regular directory from a `Git` repository.
@@ -155,7 +161,7 @@ Commands:
 - `git rm --cached <filename>` **unstages** a file, move it from `staging area` to `untracked`.
 
 
-## `git commit`
+## `git commit` - Take Snapshot of Your Work
 In a Git project timeline, commits are like the core building blocks! They can be thought of as milestones along the timeline of a Git project. Just like keyframes in an animation. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.
 
 - *commit*
@@ -174,34 +180,45 @@ git commit -m "update the README.md with link to contributing guide"
 ```
 
 - *combine git add and git commit*
-```
+```bash
 git commit -am "descriptive commit message"
 ```
-In addition to including the commit message, this option allows you to skip the staging phase. The addition of -a will automatically stage any files that are already being tracked by Git (changes to files that you've committed before).
+In addition to including the commit message, this option allows you to skip the staging phase. The addition of `-a` will automatically stage any files that are already being tracked by Git (changes to files that you've committed before).
 
 
 
-## Viewing Your Commit History
-
-The `git log` command shows you all the committed snapshots. It is used to list and filter the project history and to search for any particular changes
-
-The log output can be personalized differently by allowing you to filter commits and to display them in an entirely user-defined format
+## `git log` - Viewing Your Commit History
 
 <div style="text-align:center"><img src="images/git-log" /></div>
 
-```bash
-git log
-```
-this command allows you to view the entire commit history. It uses space for scrolling and q for exiting if the log output takes up multiple screens
+The `git log` command shows you all the committed snapshots. It is used to list and filter the project history and to search for any particular changes.
 
-```bash
-git log --oneline
-```
-this command allows you to fit each commit into a single line, which comes in handy when you would like to get an overview of the project history
+The log output can be personalised differently by allowing you to filter commits and to display them in an entirely user-defined format
 
-these are just some of the most commonly used commands, to see the full list of available formatting options use the ```git help log``` command to see the man page for the Git Log tool. Alternatively you could view the [online documentation](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) here!
+- *show complete commit history*
+    ```bash
+    git log
+    ```
+    this command allows you to view the entire commit history. It uses space for scrolling and q for exiting if the log output takes up multiple screens
 
-## Removing a File
+- *show compact commit log with oneline per commit*
+    ```bash
+    git log --oneline
+    ```
+    this command allows you to fit each commit into a single line, which comes in handy when you would like to get an overview of the project history.
+
+- *show git graph*
+    ```bash
+    git log --oneline --graph
+    ```
+
+    <div style="text-align:center"><img src="images/git_graph_1.png" style="max-height:600px; padding:10px"></div>
+
+
+
+- these are just some of the most commonly used commands, to see the full list of available formatting options use the `git help log` command to see the man page for the Git Log tool. Alternatively you could view the [online documentation](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) here!
+
+## `git rm` - Remove/Un-track a File from a Git Repository
 
 As your project changes over time, there will be times when you would have to remove a file or an entire directory from a repository. Git has a special command to remove files, which also takes some important flags depending on your use-case!
 
@@ -225,9 +242,9 @@ this command can be used to remove an entire directory from the repository
 However we are not quite done yet! If you run the ```status``` command you will notice that the removal of the file is still in staging and needs to be committed to the repository.
 
 
-## Branching
+## `git branch` - Branching
 
-Git branches are essentially a pointer to a snapshot of your changes! It is good practice to spawn a branch everytime you want to add a new feature or fix a bug to encapsulate your changes. By doing so the chances of unstable code being merged into the main code base will become lesser.
+Git branches are essentially a pointer to a snapshot of your changes! It is good practice to spawn a branch every time you want to add a new feature or fix a bug to encapsulate your changes. By doing so the chances of unstable code being merged into the main code base will become lesser.
 
 <div style="text-align:center"><img src="images/branching.png" /></div>
 
@@ -324,3 +341,7 @@ You can find advanced information on Git merging and merge-conflict resolution [
 ### Shell Integration
 
 ### Editor Integration
+
+## `git config` Personalisation
+
+ref: [](https://medium.com/@lucaspenzeymoog/prettier-git-logs-one-graph-at-a-time-d3790a753e6b)
