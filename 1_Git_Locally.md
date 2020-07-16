@@ -404,14 +404,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 Once you open the open the file in which there is a conflict you should see something like this:
 
-```
-<<<<<<< HEAD
-This is an edit on the master branch
-=======
-This is an edit on the <branch-name> branch
->>>>>>> <branch-name>
-
-```
+<div style="text-align:center"><img src="images/merge_marker_1.png" style="max-height:200px; padding:10px"></div>
 
 The "<<" character denotes the current branch's edits and the "==" sign denotes the end of the first section. The second section is where the edits are from the attempted merge, and it starts with the "==" signs and ends with the ">>" signs.
 
