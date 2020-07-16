@@ -22,16 +22,21 @@
 ## Platform
 
 - Twitch - [Live Stream Link](https://www.twitch.tv/3dcdsc)
-- Pigeonhole
+- Pigeonhole - [Live QA Link]()
 
 ## Lesson Material
 
 - [Session 0: Git Installation](0_Install_Git.md)
-- [Session 1: Git Locally] - To be released
-- [Session 2: Git with GitHub] - To be released
+- [Session 1: Git Locally](1_Git_Locally.md)
+- [Session 2: Git with GitHub] - to be released
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
+
+
+## Post-Workshop Survey
+
+- Please help us fill in [this](https://forms.gle/Z8xGZm21hovXLAwHA) anonymous survey (less than 1 min needed).
 
 ## Contributors
 
