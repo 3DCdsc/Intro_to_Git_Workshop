@@ -218,29 +218,101 @@ The log output can be personalised differently by allowing you to filter commits
 
 - these are just some of the most commonly used commands, to see the full list of available formatting options use the `git help log` command to see the man page for the Git Log tool. Alternatively you could view the [online documentation](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) here!
 
-## `git rm` - Remove/Un-track a File from a Git Repository
+## `git rm` - Remove files from a Git Repository
 
-As your project changes over time, there will be times when you would have to remove a file or an entire directory from a repository. Git has a special command to remove files, which also takes some important flags depending on your use-case!
+- *delete a file*
+```bash
+rm <filename>
+```
 
-Let us now take a look at the ```git rm``` command and how it can be used to remove files and directories from your repository!
-
+- *delete a file and stage this change*
 ```bash
 git rm <filename>
 ```
-this command can be used to remove a single file from the repository
 
-```bash
-git rm <filename1> <filename2>
-```
-this command can be used to remove multiple files
 
+- *delete a directory and stage this change*
 ```bash
 git rm -r <directory>
 ```
-this command can be used to remove an entire directory from the repository
 
-However we are not quite done yet! If you run the ```status``` command you will notice that the removal of the file is still in staging and needs to be committed to the repository.
+## `.gitignore` - Tell `git` to ignore certain files or folders
 
+- *create a dummy file called `credentials.txt`*
+```bash
+touch credentials.txt
+```
+
+- *check git status*
+```bash
+git status
+```
+
+- *create a file called `.gitignore`*
+```bash
+touch .gitignore
+```
+
+- *append a line of text to `.gitignore`*
+```bash
+echo "credentials.txt" >> .gitignore
+```
+
+- *display the content of the file*
+```bash
+cat .gitignore
+```
+
+- *commit this `.gitignore` file*
+```bash
+git add .gitignore
+git commit -m  'Add .gitignore'
+```
+
+- *check status. `credentials.txt` exists in working directory but not tracked by `git`*
+```bash
+ls
+git status
+```
+
+### How to ignore an already tracked file
+
+- *append a line to the `.gitignore`*
+```bash
+echo "*.txt" >> .gitignore
+```
+`*` means anything, so `*.txt` represents any file with a `.txt` extension.
+
+- *commit this change*
+```bash
+git add .gitignore
+git commit -m  'Add .gitignore'
+```
+
+- *check files being tracked in git repository*
+```bash
+git ls-tree -r master
+```
+
+- *remove everything from git but not working directory*
+```bash
+git rm -r --cached .
+```
+
+- *stage everything*
+```bash
+git add .
+```
+
+- *commit everything*
+```bash
+git commit -m 'Update'
+```
+
+- *check files being tracked in git repository*
+```bash
+git ls-tree -r master
+```
 
 ## `git branch` - Branching
 
@@ -254,22 +326,27 @@ Do note that the master branch is the name of the default branch. In this pictur
 
 How this works is that Git stores a branch as a reference to a commit. In other words, a branch represents the tip of a series of commits and is not a container of for commits.
 
-Let us know take a look at some of the common options in branching
 
+- *lists all the branches in your repository*
 ```bash
 git branch
 ```
-This command lists all the branches in your repository
 
+- *creates a new branch named `<branch>`*
 ```bash
 git branch <branch>
 ```
-this command creates a new branch named ```<branch>```
 
+- *move to the `<branch>`*
+```bash
+git checkout <branch>
+```
+
+- *delete a specified branch*
 ```bash
 git branch -d <branch>
 ```
-this command allows you to delete the specified branch
+
 
 ## Merges
 
@@ -313,7 +390,7 @@ Sometimes two developers will change the same line of code in two different ways
 
 If this happens you should see something like this in your screen
 
-```bash
+```
 Auto-merging <file>
 CONFLICT (content): Merge conflict in <file>
 Automatic merge failed; fix conflicts and then commit the result.
@@ -329,7 +406,7 @@ This is an edit on the <branch-name> branch
 
 ```
 
-The "<<" charecters denotes the current branch's edits and the "==" sign denotes the end of the first section. The second section is where the edits are from the attempted merge, and it starts with the "==" signs and ends with the ">>" signs.
+The "<<" character denotes the current branch's edits and the "==" sign denotes the end of the first section. The second section is where the edits are from the attempted merge, and it starts with the "==" signs and ends with the ">>" signs.
 
 Since you are the developer, you get to decide what stays and what goes. Make your edits as required and then close the file. Once you are done with this follow the directions to add the files and then commit.
 
@@ -340,8 +417,19 @@ You can find advanced information on Git merging and merge-conflict resolution [
 
 ### Shell Integration
 
+- For macOS / Linux / WSL User
+    - [Z shell](http://zsh.sourceforge.net/)
+    - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+    - [Powerlevel 10k](https://github.com/romkatv/powerlevel10k)
+
 ### Editor Integration
 
-## `git config` Personalisation
+- Any mainstream IDE/ Text Editor would support some `git` plugins.
+    - VS code
+    - Atom
+    - VIM
+    - ...
+
+## `git config` Customisation
 
 ref: [](https://medium.com/@lucaspenzeymoog/prettier-git-logs-one-graph-at-a-time-d3790a753e6b)
