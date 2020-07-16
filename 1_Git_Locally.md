@@ -5,21 +5,22 @@
 
 This is an introductory workshop to Git, created by 3DC. This Readme contains the lesson content for this workshop, including sample snippets.
 
-1. [What is Git and why should I learn Git?](#what-is-git-and-why-should-i-learn-git)
-2. [What is GitHub and how is it different from Git?](#what-is-github-and-how-is-it-different-from-git)
-5. [Creating your first Git Repository](#creating-your-first-git-repository)
-6. [Checking the status of your Git Repository](#checking-the-status-of-your-git-repository)
-7. [Adding files to your Git Repository](#adding-files-to-your-git-repository)
-8. [Staging, Committing and pushing Changes](#staging-committing-and-pushing-changes)
-9. [Viewing the committed History](#viewing-the-committed-history)
-10. [Removing a File](#removing-a-file)
-15. [Branching](#branching)
-16. [Merges](#merges)
-   1. [Preparing to Merge](#preparing-to-merge)
-   2. [Merging](#merging)
-17. [Fast Forward Merge](#fast-forward-merge)
-   1. [3-Way Merge](#3-way-merge)
-   2. [Resolving Merge Conflicts](#resolving-merge-conflicts)
+1. [What is Git?](#)
+2. [What is the difference between Git and GitHub?](#)
+5. [Why should you learn Git?](#)
+6. [Basic Shell Commands](#)
+7. [Creating your first Git Repository](#)
+8. [Checking the status of your Git Repository](#)
+9. [Adding files to your Git Repository](#)
+10. [The Staging Area](#)
+15. [`git commit` - Take Snapshot of Your Work](#)
+16. [`git log` - Viewing Your Commit History](#)
+17. [`git rm` - Remove files from a Git Repository](#)
+17. [`.gitignore` - Tell `git` to ignore certain files or folders](#)
+17. [`git branch` - Branching](#)
+17. [`git merge` - Merges](#)
+17. [Git GUI](#)
+
 
 ## What is Git?
 
@@ -53,9 +54,11 @@ This is an introductory workshop to Git, created by 3DC. This Readme contains th
 
 Launch your Terminal / Shell on your computer:
 
+
 | Windows | MacOS |
 | :---: | :---:|
 | <img src="images/win_bash_app.jpeg" style="max-height:200px"> | <img src="images/mac_term.png" style="max-height:200px"> |
+
 
 - `ls` for List
     - `ls -a` for List All
@@ -347,8 +350,14 @@ git checkout <branch>
 git branch -d <branch>
 ```
 
+### `git checkout`
 
-## Merges
+- `git checkout` operates upon three distinct entities: `files`, `commits`, and `branches`.
+- `git checkout <BRANCH NAME>` switches to another existing branch.
+- `git checkout -b <NEW BRANCH NAME>` creates a new branch and switches to it simultaneously.
+- `git checkout <COMMIT HASH STRING>`
+
+## `git merge` - Merges
 
 The ```git merge``` command is essentially used to take two independent lines of development created by ```git branch``` and integrate them into a single branch. Let us take a closer look on how this works:
 
@@ -359,18 +368,18 @@ The ```git merge``` commit will combine multiple sequences of commits into one u
 
 Here is a pictorial representation of how this is done!
 
-### Preparing to Merge
+#### Preparing to Merge
 
 There are a couple things you need to take care of to ensure that the merge goes smoothly:
 
 1) Confirming the receiving branch: Execute ```git status``` to ensure that the``` HEAD``` is pointed to the correct merge-receiving branch
 2) Making sure that the receiving branch and the merging branch are up-to-date with the latest remote changes
 
-### Merging
+#### Merging
 
 Once you are ready to merge, execute the ``` git merge <branchname>``` command to merge ```<branchname>``` to the receiving branch
 
-## Fast Forward Merge
+#### Fast Forward Merge
 
 This occurs when there is a linear path from the current branch tip to the target branch. In such a situation what Git needs to do is to "Fast Forward" the current branch tip to the target branch. What this essentially does is combining the histories of the two branches.
 
@@ -378,13 +387,13 @@ This occurs when there is a linear path from the current branch tip to the targe
 
 Here is a pictorial depiction of how a fast forward merge works
 
-### 3-Way Merge
+#### 3-Way Merge
 
 When there exists no linear path between the two branches (The branches are merged) then the only option the Git has is to combine them via a 3-Way merge. 3-Way merges use a dedicated commit to tie together the two histories. The nomenclature comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common ancestor.
 
 The merging diagram we presented to you earlier shows how 3-Way merging is carried out!
 
-### Resolving Merge Conflicts
+#### Resolving Merge Conflicts
 
 Sometimes two developers will change the same line of code in two different ways and in such a case, Git can't tell which version is correct. Since that is something that only a developer can tell, merge conflicts must be resolved manually.
 
@@ -413,7 +422,7 @@ Since you are the developer, you get to decide what stays and what goes. Make yo
 You can find advanced information on Git merging and merge-conflict resolution [right here](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging).
 
 
-## Git GUI Tools
+## Git GUI
 
 ### Shell Integration
 
@@ -432,4 +441,4 @@ You can find advanced information on Git merging and merge-conflict resolution [
 
 ## `git config` Customisation
 
-ref: [](https://medium.com/@lucaspenzeymoog/prettier-git-logs-one-graph-at-a-time-d3790a753e6b)
+- [prettier-git-logs](https://medium.com/@lucaspenzeymoog/prettier-git-logs-one-graph-at-a-time-d3790a753e6b)
