@@ -43,3 +43,15 @@ Supplementary:
 - [Jason Chow](https://github.com/slimechips)
 - [Shyam Sridhar](https://github.com/SHSR2001)
 - [Mark Huang](https://github.com/MarkHershey)
+
+## TAs
+
+Should you have any questions during or after the session please feel free to reach out to anyone below on Telegram:
+
+- Jason Chow (@slimechips)
+- Mark Huang (@MarkHershey)
+- Shyam Sridhar (@ShyamSridhar)
+- Huiqing (@poopypaws)
+- Kai Xun (@kkxxxx)
+
+
