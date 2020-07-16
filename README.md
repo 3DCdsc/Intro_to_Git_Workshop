@@ -53,5 +53,6 @@ Should you have any questions during or after the session please feel free to re
 - Shyam Sridhar (@ShyamSridhar)
 - Huiqing (@poopypaws)
 - Kai Xun (@kkxxxx)
+- Caleb Foo (@kaypohleb)
 
 
