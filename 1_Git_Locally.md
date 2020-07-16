@@ -2,24 +2,22 @@
 ---
 ## Lesson 1 - Git on Your Machine Locally
 
-
-This is an introductory workshop to Git, created by 3DC. This Readme contains the lesson content for this workshop, including sample snippets.
-
 1. [What is Git?](#what-is-git)
-2. [What is the difference between Git and GitHub?](#what-is-the-difference-between-git-and-github)
-5. [Why should you learn Git?](#why-should-you-learn-git)
-6. [Basic Shell Commands](#basic-shell-commands)
-7. [Creating your first Git Repository](#creating-your-first-git-repository---one-person-starting-a-new-repository-locally)
-8. [Checking the status of your Git Repository](#checking-the-status-of-your-git-repository)
-9. [Adding files to your Git Repository](#adding-files-to-your-git-repository)
-10. [The Staging Area](#the-staging-area)
-15. [`git commit` - Take Snapshot of Your Work](#git-commit---take-snapshot-of-your-work)
-16. [`git log` - Viewing Your Commit History](#git-log---viewing-your-commit-history)
-17. [`git rm` - Remove files from a Git Repository](#git-rm---remove-files-from-a-git-repository)
-17. [`.gitignore` - Tell `git` to ignore certain files or folders](#git-rm---remove-files-from-a-git-repository)
-17. [`git branch` - Branching](#git-branch---branching)
-17. [`git merge` - Merges](#git-merge---merges)
-17. [Git GUI](#git-gui)
+1. [What is the difference between Git and GitHub?](#what-is-the-difference-between-git-and-github)
+1. [Why should you learn Git?](#why-should-you-learn-git)
+1. [Basic Shell Commands](#basic-shell-commands)
+1. [Creating your first Git Repository](#creating-your-first-git-repository---one-person-starting-a-new-repository-locally)
+1. [Checking the status of your Git Repository](#checking-the-status-of-your-git-repository)
+1. [Adding files to your Git Repository](#adding-files-to-your-git-repository)
+1. [The Staging Area](#the-staging-area)
+1. [`git commit` - Take Snapshot of Your Work](#git-commit---take-snapshot-of-your-work)
+1. [`git log` - Viewing Your Commit History](#git-log---viewing-your-commit-history)
+1. [`git rm` - Remove files from a Git Repository](#git-rm---remove-files-from-a-git-repository)
+1. [`.gitignore` - Tell `git` to ignore certain files or folders](#gitignore---tell-git-to-ignore-certain-files-or-folders)
+1. [`git branch` - Branching](#git-branch---branching)
+1. [`git merge` - Merges](#git-merge---merges)
+1. [Git GUI](#git-gui-tools)
+1. [Git Config Customisation](#git-config-customisation)
 
 
 ## What is Git?
@@ -441,8 +439,12 @@ You can find advanced information on Git merging and merge-conflict resolution [
 
 ## Git Config Customisation
 
-- *example*
+- *example - [Ref](https://medium.com/@lucaspenzeymoog/prettier-git-logs-one-graph-at-a-time-d3790a753e6b)*
 ```
 git config --global alias.graph "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
 ```
-    - [Reference](https://medium.com/@lucaspenzeymoog/prettier-git-logs-one-graph-at-a-time-d3790a753e6b)
+---
+
+## Post-Workshop Survey
+
+Please help us fill in [this](https://forms.gle/Z8xGZm21hovXLAwHA) anonymous survey (less than 1 min needed).
