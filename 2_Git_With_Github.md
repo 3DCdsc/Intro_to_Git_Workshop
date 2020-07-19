@@ -7,7 +7,7 @@
    2. [Adding Collaborators to your personal repository](#adding-collaborators-to-your-personal-repository)
    3. [Remote Repositories](#remote-repositories)
       1. [(```git remote add```) Adding a Remote](#git-remote-add-adding-a-remote)
-      2. [Pushing to GitHub Remote](#pushing-to-github-remote)
+      2. [(`git push`) Upload changes to remote Github repository](#git-push-upload-changes-to-remote-github-repository)
 4. [Route 2: Cloning a Github Repository onto your local machine](#route-2-cloning-a-github-repository-onto-your-local-machine)
    1. [Forking a repository](#forking-a-repository)
    2. [Creating a new branch on Github](#creating-a-new-branch-on-github)
@@ -97,7 +97,7 @@ Step 3: On the panel to your left, click on the "Manage Access" option
 
 Step 4: In this page, scroll to the bottom and click on the "Invite a Collaborator" option. You are now prompted to enter either the username, email ID or the full-name of your soon to be project collaborator. 
 
-You can either add your friends (as long as they have a Github Account) as collaborators or any of us. The user will receive an email to collaborate. 
+You can either add your friends (as long as they have a Github Account) as collaborators or a throwaway account (`3DCWorkshopThrowaway`). The user will receive an email to collaborate (they will have to accept it to collaborate). 
 
 Once you are done finding that person click on "Select a collaborator above"
 
@@ -139,7 +139,7 @@ If you have done all of this successfully it should look something like this:
 ![](insert some screenshot here)
 
 
-#### Pushing to GitHub Remote
+#### (`git push`) Upload changes to remote Github repository
 
 Previously, what we learnt with ```git add``` and ```git commit``` only affects the local repository. To push your changes from the local repository to the remote Github repository, a third ```git push``` command is necessary, so let's do it! This is used to send all committed changes to remote repositories for collaboration. Team members will be able to access the new changes you have made.
 
@@ -309,7 +309,7 @@ For now, let us just change the title of the webpage. Edit `index.html` that is 
 
 ### Commiting your changes and pushing them onto Github
 
-Now that we have made our changes run the following commands in order to add these changes to our staging area (Please read Session 1 notes if you dont understand what is going on!!!), and then commit the changes to the `working` branch of your pulled repo (Note: Ensure that you are on `working` branch by doing `git branch`, your current branch is highlighted. If you are not on working branch please use `git checkout working`) 
+Now that we have made our changes run the following commands in order to add these changes to our staging area to be committed, and then commit the changes to the `working` branch of your pulled repo (Note: Ensure that you are on `working` branch by doing `git branch`, your current branch is highlighted. If you are not on working branch please use `git checkout working`) 
 
 ```bash
 git add index.html
