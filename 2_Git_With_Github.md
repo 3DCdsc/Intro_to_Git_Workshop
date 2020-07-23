@@ -61,7 +61,7 @@ Then follow the steps below to create a Git respoitory on your local computer co
 
 1. **Create** a git repository inside an empty folder with `git init`
 2. **Download sample project files** for a website from here: https://github.com/kaypohleb/js-teaching
-3. **Unzip** the files into the empty folder with the git repository
+3. **Unzip** the files into the empty folder with the git repository (Note: Step 2 and 3 are just simulating that you have done some work for a project on your local machine that has yet to be linked to GitHub)
 4. `git add -a` to add all new files to the **staging area**
 5. `git commit -m 'Initial Commit'` to **commit** the new files into the git repository.
 
@@ -177,7 +177,7 @@ This step is applicable if you want to create your own copy of the repository, w
 
 Assume that the above diagram represents a repository. Now let us say that this repository is sitting on GitHub in 3DC's account. Suppose you want to have a copy of this repository as it is on your account as well so that you can access everything that is inside this repository and make changes to the stuff that is in there without affecting what is currently sitting on 3DC's account. To do this you will need to "Fork" the repository. What this does is that it takes an entirely different instance of the repository and adds it to your account. 
 
-To fork a repository you can simply go to the repository's page and hit the fork button on the top right corner. 
+To fork a repository you can simply go to the repository's page and hit the fork button on the top right corner. Let's go ahead and fork the same repository we downloaded just now (https://github.com/kaypohleb/js-teaching)
 
 <div style="text-align:center"><img src="images/Fork1.PNG" /></div>
 
