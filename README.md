@@ -28,7 +28,7 @@
 
 - [Session 0: Git Installation](0_Install_Git.md)
 - [Session 1: Git Locally](1_Git_Locally.md)
-- [Session 2: Git with GitHub] - to be released
+- [Session 2: Git with GitHub](2_Git_With_Github.md)
 
 Supplementary:
 - [Git Cheatsheet](Atlassian-Git-Cheatsheet.pdf)
