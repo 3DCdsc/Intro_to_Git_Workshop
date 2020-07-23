@@ -1,28 +1,28 @@
 # Git with Github
 
-1. [Introduction](#introduction)
-2. [Creating a GitHub account (Skip this if you already have one)](#creating-a-github-account-skip-this-if-you-already-have-one)
-3. [Route 1: Uploading an exisiting repository on local machine to Github](#route-1-uploading-an-exisiting-repository-on-local-machine-to-github)
-   1. [Creating a Repository on GitHub](#creating-a-repository-on-github)
-   2. [Adding Collaborators to your personal repository](#adding-collaborators-to-your-personal-repository)
-   3. [Remote Repositories](#remote-repositories)
-      1. [(```git remote add```) Adding a Remote](#git-remote-add-adding-a-remote)
-      2. [(`git push`) Upload changes to remote Github repository](#git-push-upload-changes-to-remote-github-repository)
-4. [Route 2: Cloning a Github Repository onto your local machine](#route-2-cloning-a-github-repository-onto-your-local-machine)
-   1. [Forking a repository](#forking-a-repository)
-   2. [Creating a new branch on Github](#creating-a-new-branch-on-github)
-   3. [Cloning the repository](#cloning-the-repository)
-5. [Making changes to remote repository directly](#making-changes-to-remote-repository-directly)
-6. [(```git pull``` and ```git fetch```) Receiving changes from the remote repository, on your local repository](#git-pull-and-git-fetch-receiving-changes-from-the-remote-repository-on-your-local-repository)
-   1. [(`git pull`) Get your changes and update local repository with changes immediately](#git-pull-get-your-changes-and-update-local-repository-with-changes-immediately)
-   2. [(`git fetch`) Get your changes, but don't update local repository with changes immediately](#git-fetch-get-your-changes-but-dont-update-local-repository-with-changes-immediately)
-7. [Example: Making changes to the project locally](#example-making-changes-to-the-project-locally)
-   1. [Commiting your changes and pushing them onto Github](#commiting-your-changes-and-pushing-them-onto-github)
-8. [Creating Pull Requests](#creating-pull-requests)
-9. [Hosting your Website on Github Pages](#hosting-your-website-on-github-pages)
-10. [Conclusion](#conclusion)
+1. [1. Introduction](#1-introduction)
+2. [2. Creating a GitHub account (Skip this if you already have one)](#2-creating-a-github-account-skip-this-if-you-already-have-one)
+3. [3. Route A: Uploading an exisiting repository on local machine to Github](#3-route-a-uploading-an-exisiting-repository-on-local-machine-to-github)
+   1. [3.1. Creating a Repository on GitHub](#31-creating-a-repository-on-github)
+   2. [3.2. Adding Collaborators to your personal repository](#32-adding-collaborators-to-your-personal-repository)
+   3. [3.3. Remote Repositories](#33-remote-repositories)
+      1. [3.3.1. (```git remote add```) Adding a Remote](#331-git-remote-add-adding-a-remote)
+      2. [3.3.2. (`git push`) Upload changes to remote Github repository](#332-git-push-upload-changes-to-remote-github-repository)
+4. [4. Route B: Cloning a Github Repository onto your local machine](#4-route-b-cloning-a-github-repository-onto-your-local-machine)
+   1. [4.1. Forking a repository](#41-forking-a-repository)
+   2. [4.2. Creating a new branch on Github](#42-creating-a-new-branch-on-github)
+   3. [4.3. Cloning the repository](#43-cloning-the-repository)
+5. [5. Making changes to remote repository directly](#5-making-changes-to-remote-repository-directly)
+6. [6. (```git pull``` and ```git fetch```) Receiving changes from the remote repository, on your local repository](#6-git-pull-and-git-fetch-receiving-changes-from-the-remote-repository-on-your-local-repository)
+   1. [6.1. (`git pull`) Get your changes and update local repository with changes immediately](#61-git-pull-get-your-changes-and-update-local-repository-with-changes-immediately)
+   2. [6.2. (`git fetch`) Get your changes, but don't update local repository with changes immediately](#62-git-fetch-get-your-changes-but-dont-update-local-repository-with-changes-immediately)
+7. [7. Example: Making changes to the project locally](#7-example-making-changes-to-the-project-locally)
+   1. [7.1. Commiting your changes and pushing them onto Github](#71-commiting-your-changes-and-pushing-them-onto-github)
+8. [8. Creating Pull Requests](#8-creating-pull-requests)
+9. [9. Hosting your Website on Github Pages](#9-hosting-your-website-on-github-pages)
+10. [10. Conclusion](#10-conclusion)
 
-## Introduction
+## 1. Introduction
 
 Welcome to using Git with Github! Today, we will see how you can integrate Git with online repository hosting services such as Github, and host a website Github. Let's have a quick recap from the previous session.
 
@@ -34,7 +34,7 @@ Welcome to using Git with Github! Today, we will see how you can integrate Git w
 
 Let us see how we can use Github.
 
-## Creating a GitHub account (Skip this if you already have one)
+## 2. Creating a GitHub account (Skip this if you already have one)
 
 Step 1: Go to [the Github Signup Page](https://github.com/join) in any web browser
 
@@ -51,7 +51,7 @@ Step 5: Verify your email address
 
 Step 6: Skip any other step for now
 
-## Route 1: Uploading an exisiting repository on local machine to Github
+## 3. Route A: Uploading an exisiting repository on local machine to Github
 
 This route is applicable when you have created a **local Git repository on your machine**, and want to **upload it online onto Github**, perhaps to collaborate with your teammates.
 
@@ -67,7 +67,7 @@ Then follow the steps below to create a Git respoitory on your local computer co
 
 ![](images/ss-download-zip.png)
 
-### Creating a Repository on GitHub
+### 3.1. Creating a Repository on GitHub
 
 Step 1: On the upper right corner of any page on the GitHub website, click the "+" icon and then click the option that says "New Repository
 
@@ -81,7 +81,7 @@ Step 4: You can choose to initialise your repository with a README file, which i
 
 <div style="text-align:center"><img src="images/git-repo-name.PNG" height = "375" width = "562.5"/></div>
 
-### Adding Collaborators to your personal repository
+### 3.2. Adding Collaborators to your personal repository
 
 You can add your friends/project-mates as your collaborators on GitHub just by knowing their username, full-name or email ID
 
@@ -105,7 +105,7 @@ Once you are done finding that person click on "Select a collaborator above"
 
 Right now, our repository on Github has been set up, but it is empty. Let us see how we can add an existing project from our computer into it.
 
-### Remote Repositories 
+### 3.3. Remote Repositories 
 
 Remote repositories are useful when you need to **share your local project** with your teammates. Usually, you make your modifications and commits locally as you have seen before! Whenever you want to share your changes with your teammates you can choose to upload these changes to a remote repository. They act as a means for sharing and exchanging code between developers. The Github repository we just created is a remote repository (but empty for now).
 
@@ -115,7 +115,7 @@ Given below is a pictorial representation of the local-remote workflow
 
 We will now see how you can link the remote Github repository with your local Git repository(containing the website).
 
-#### (```git remote add```) Adding a Remote
+#### 3.3.1. (```git remote add```) Adding a Remote
 
 To add a new remote, we make use of the ```git remote add``` command on the terminal, in the directory where your repository is stored. The command takes in two arguments:
   1) A unique remote name (usually by default we call it `origin`)
@@ -139,7 +139,7 @@ If you have done all of this successfully it should look something like this:
 ![](insert some screenshot here)
 
 
-#### (`git push`) Upload changes to remote Github repository
+#### 3.3.2. (`git push`) Upload changes to remote Github repository
 
 Previously, what we learnt with ```git add``` and ```git commit``` only affects the local repository. To push your changes from the local repository to the remote Github repository, a third ```git push``` command is necessary, so let's do it! This is used to send all committed changes to remote repositories for collaboration. Team members will be able to access the new changes you have made.
 
@@ -165,11 +165,11 @@ git push <remote> --all
 This command allows you to push all your local branches into the specified remote.
 
 
-## Route 2: Cloning a Github Repository onto your local machine
+## 4. Route B: Cloning a Github Repository onto your local machine
 
 Imagine your friend, or someone else has created an online repository on Github, with some prexisting files in it already. This route will explain how you might collaborate with your friend to work the existing repository, **OR** create your own copy of the repository and work on it yourself.
 
-### Forking a repository
+### 4.1. Forking a repository
 
 This step is applicable if you want to create your own copy of the repository, without affecting the original repository. Note that if you already have edit rights to the repository and want to edit it directly, you do not need to do this step. Let us first begin by understanding what forking is.
 
@@ -191,7 +191,7 @@ Once you do this you would have now sucessfully forked the given repo into your 
 
 <div style="text-align:center"><img src="images/Fork4.PNG" /></div>
 
-### Creating a new branch on Github
+### 4.2. Creating a new branch on Github
 
 Previously, we have explained how you can create a new branch on your local Git repository (A branch is a pointer to a snapshot to a different version version of your project, usually this snapshot contains features that are not yet fully developed/integrated). Recall all you had to do was (no need to do this now):
 
@@ -207,7 +207,7 @@ To do so, simply click on the `Branch: master` button and inside the `Find or cr
 
 You have now created a new branch! You should now see the `Branch: master` button has changed to `Branch: working` to indicate that you are on the new branch. You can switch to other branches (e.g. back to master) at any time by clicking on the Branch button.
 
-### Cloning the repository
+### 4.3. Cloning the repository
 
 Now that that we have our repository (whether you forked it, or you have edit rights to it), let us **clone** this repository onto our local machine. Start off by copying the clone address.
 
@@ -221,7 +221,7 @@ git clone <your repository url here>
 
 This will clone the git repsitory from Github onto your local machine (Git will create a new folder to store these files). When you clone this repsitory instead of downloading the files as a zip, the repository on your local machine is automatically linked to the one online.
 
-## Making changes to remote repository directly
+## 5. Making changes to remote repository directly
 
 Let us make some changes in the remote repository. In Github, you can make changes to files directly, by clicking on the edit button.
 
@@ -233,11 +233,11 @@ Let us add some more content to the readme by adding some text.
 
 Once you are done, you can commit your changes directly on the remote Github repository by clicking on the ***Commit Changes*** button.
 
-## (```git pull``` and ```git fetch```) Receiving changes from the remote repository, on your local repository
+## 6. (```git pull``` and ```git fetch```) Receiving changes from the remote repository, on your local repository
 
 We have made some changes on the remote GitHub repository, now it is time to synchronise these changes onto our local Git repository!
 
-### (`git pull`) Get your changes and update local repository with changes immediately
+### 6.1. (`git pull`) Get your changes and update local repository with changes immediately
 
 If you want to get your changes and update your local Git repository immediately, you can use (Make sure there are no conflicting changes in your local Git repository):
 
@@ -263,7 +263,7 @@ git pull origin <current_branch_you_are_on>
 git pull --all
 ```
 
-### (`git fetch`) Get your changes, but don't update local repository with changes immediately
+### 6.2. (`git fetch`) Get your changes, but don't update local repository with changes immediately
 
 If you however, only want to get the changes from the remote git repository, but do not want the remote changes to be applied yet (e.g. when you are still working on some changes locally), you can use
 
@@ -288,7 +288,7 @@ git fetch --all
 
 When you are ready to merge/integrate the changes that you have fetched into the local repository, you can use `git merge`.
 
-## Example: Making changes to the project locally
+## 7. Example: Making changes to the project locally
 
 *Note: This step is just to simulate making changes to your project.*
 
@@ -307,7 +307,7 @@ For now, let us just change the title of the webpage. Edit `index.html` that is 
 ![](images/ss-github-rocks.png)
 
 
-### Commiting your changes and pushing them onto Github
+### 7.1. Commiting your changes and pushing them onto Github
 
 Now that we have made our changes run the following commands in order to add these changes to our staging area to be committed, and then commit the changes to the `working` branch of your pulled repo (Note: Ensure that you are on `working` branch by doing `git branch`, your current branch is highlighted. If you are not on working branch please use `git checkout working`) 
 
@@ -335,7 +335,7 @@ Click on the file to verify your changes.
 ![](images/ss-github-github-rocks.png)
 
 
-## Creating Pull Requests
+## 8. Creating Pull Requests
 
 Now, let us assume that you want to get approval from your friend regarding your changes. So basically, you want approval to merge your requests from the `working` branch into the `master` branch. You can open a **pull request**. A **pull request** allows your friend, or anyone with access rights to the repository to review the request and compare changes side by side on Github.
 
@@ -366,7 +366,7 @@ Assuming that you have now made some changes to the forked repository and you be
 
 Now that we have discussed the concepts behind forks and pull requests let us now actually implement these concepts and see how it works in action!
 
-## Hosting your Website on Github Pages
+## 9. Hosting your Website on Github Pages
 
 Github Pages is an easy way to host static websites containing HTML, CSS, and JavaScript files straight from a repository on GitHub. Yes that means, you can publish the website files from your Github repository directly!
 
@@ -381,7 +381,7 @@ As it turns out, the project you cloned/forked from 3DC contains file for the we
 5. Click on the link provided and you should see your static website up and running. Go ahead and click on the link to play around with your new website! ![](images/ss-github-pages-4.png)
 6. You will note that the title of the main page is also whatever you have changed it to, from previously.
 
-## Conclusion
+## 10. Conclusion
 
 Git is a tool that can be used with just very basic commands, but if you would like to do something complicated, such as choosing certain commits to be reverted, or erasing commit history, you will need to use more advanced commands. When in doubt, just search online for answers, chances are someone on sites like Stack Overflow may have asked the same question.
 
