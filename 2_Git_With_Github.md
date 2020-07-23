@@ -62,7 +62,7 @@ Then follow the steps below to create a Git respoitory on your local computer co
 1. **Create** a git repository inside an empty folder with `git init`
 2. **Download sample project files** for a website from here: https://github.com/kaypohleb/js-teaching
 3. **Unzip** the files into the empty folder with the git repository (Note: Step 2 and 3 are just simulating that you have done some work for a project on your local machine that has yet to be linked to GitHub)
-4. `git add -a` to add all new files to the **staging area**
+4. `git add --all` to add all new files to the **staging area**
 5. `git commit -m 'Initial Commit'` to **commit** the new files into the git repository.
 
 ![](images/ss-download-zip.png)
@@ -389,7 +389,7 @@ git log --oneline # Displays the recent commit history in a succint format. Use 
 git clone <url_of_repository> # Obtain a copy of a remote repository onto your computer
 git remote add origin <url_of_repository> # Set the remote repository of a local repository
 git add <file> # Add a file/folder to the staging area, to be committed. Omit the <file> and use --all if you just want to add all your changes
-git remove <file> # Remove a file/folder from the staging area, so it would not be commited
+git reset -- HEAD <file_name> # Remove a file/folder from the staging area, so it would not be commited
 git commit -m "Some commit message" # Commit the files in the staging area, with a commit message
 git push # Push commits from your local repository to a remote repository
 git pull # Get commits from remote repository and immediately update your local repository with the changes
