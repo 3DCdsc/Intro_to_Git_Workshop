@@ -134,11 +134,6 @@ git remote add origin https://github.com/3DCdsc/Intro_to_Git
   
 Once this is done you could use the ``` git remote -v``` command to verify your remote
   
-If you have done all of this successfully it should look something like this:
-  
-![](insert some screenshot here)
-
-
 #### 3.3.2. (`git push`) Upload changes to remote Github repository
 
 Previously, what we learnt with ```git add``` and ```git commit``` only affects the local repository. To push your changes from the local repository to the remote Github repository, a third ```git push``` command is necessary, so let's do it! This is used to send all committed changes to remote repositories for collaboration. Team members will be able to access the new changes you have made.
